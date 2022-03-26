@@ -23,7 +23,7 @@ jobs:
           whoami
           cd /home/ubuntu/my-app 
           git pull
-          kill -9 $(pgrep node)
-          npm install
+          kill -9 $(pgrep node)        
           npm run start
+          echo "success"
             
