@@ -21,8 +21,9 @@ jobs:
         script: |
           sudo su
           whoami
-          cd my-app 
+          cd /home/ubuntu/my-app 
           git pull
+          kill -9 $(pgrep node)
           npm install
           npm run start
             
