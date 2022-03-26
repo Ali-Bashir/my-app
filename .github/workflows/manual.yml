@@ -21,10 +21,8 @@ jobs:
         script: |
           sudo su
           whoami
-          apt install npm -y
-          apt install git -y
-          git clone https://github.com/Ali-Bashir/my-app.git
           cd my-app 
+          git pull
           npm install
           npm run start
             
